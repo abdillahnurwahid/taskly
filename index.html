@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taskly - Aplikasi Manajemen Tugas</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body class="font-sans text-gray-800">
 
@@ -46,59 +48,105 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-gray-50 pt-28 pb-20 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Kelola Tugas Lebih Mudah dengan Taskly</h1>
-    <p class="mt-4 text-lg text-gray-600">Aplikasi sederhana untuk membantu Anda mengatur pekerjaan, sekolah, dan aktivitas sehari-hari.</p>
-    <a href="#download" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Mulai Sekarang</a>
+  <section id="home" class="bg-gray-50 pt-28 pb-20">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <!-- Teks -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+          Kelola Tugas Lebih Mudah dengan Taskly
+        </h1>
+        <p class="mt-4 text-lg text-gray-600">
+          Aplikasi sederhana untuk membantu Anda mengatur pekerjaan, sekolah, dan aktivitas sehari-hari.
+        </p>
+        <a href="#download" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+          Mulai Sekarang
+        </a>
+      </div>
+
+      <!-- Gambar Mockup -->
+      <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+        <img src="img/mockup.png" alt="Mockup Taskly" class="w-64 md:w-80 drop-shadow-xl rounded-xl">
+      </div>
+    </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-20 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-gray-900">Fitur Utama</h2>
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-gray-50 rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-indigo-600">Mudah Digunakan</h3>
-          <p class="mt-3 text-gray-600">Antarmuka sederhana yang membuat siapa saja bisa cepat terbiasa.</p>
-        </div>
-        <div class="p-6 bg-gray-50 rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-indigo-600">Pengingat Otomatis</h3>
-          <p class="mt-3 text-gray-600">Jangan khawatir lupa deadline, kami ingatkan Anda tepat waktu.</p>
-        </div>
-        <div class="p-6 bg-gray-50 rounded-lg shadow">
-          <h3 class="text-xl font-semibold text-indigo-600">Sinkronisasi</h3>
-          <p class="mt-3 text-gray-600">Akses tugas Anda di berbagai perangkat dengan akun yang sama.</p>
-        </div>
+<section id="features" class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900">Fitur Utama</h2>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-50 rounded-lg shadow">
+        <i class="fa-solid fa-gauge-high text-indigo-600 text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold text-indigo-600">Mudah Digunakan</h3>
+        <p class="mt-3 text-gray-600">Antarmuka sederhana yang membuat siapa saja bisa cepat terbiasa.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow">
+        <i class="fa-solid fa-clock text-indigo-600 text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold text-indigo-600">Pengingat Otomatis</h3>
+        <p class="mt-3 text-gray-600">Jangan khawatir lupa deadline, kami ingatkan Anda tepat waktu.</p>
+      </div>
+      <div class="p-6 bg-gray-50 rounded-lg shadow">
+        <i class="fa-solid fa-arrows-rotate text-indigo-600 text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold text-indigo-600">Sinkronisasi</h3>
+        <p class="mt-3 text-gray-600">Akses tugas Anda di berbagai perangkat dengan akun yang sama.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-gray-900">Apa Kata Pengguna?</h2>
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="p-6 bg-white rounded-lg shadow">
-          <p class="text-gray-600">“Taskly sangat membantu saya mengatur jadwal kuliah. Sekarang semua terasa lebih teratur!”</p>
-          <h4 class="mt-4 font-semibold text-indigo-600">— Budi, Mahasiswa</h4>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow">
-          <p class="text-gray-600">“Sebelumnya saya sering lupa deadline kerja. Dengan Taskly, semua jadi lebih mudah.”</p>
-          <h4 class="mt-4 font-semibold text-indigo-600">— Siti, Karyawan</h4>
-        </div>
+<section id="testimonials" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-900">Apa Kata Pengguna?</h2>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Testimoni 1 -->
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i class="fa-solid fa-graduation-cap text-indigo-600 text-6xl mb-4"></i>
+        <p class="text-gray-600">“Taskly sangat membantu saya mengatur jadwal kuliah. Sekarang semua terasa lebih teratur!”</p>
+        <h4 class="mt-4 font-semibold text-indigo-600">— Budi, Mahasiswa</h4>
       </div>
+
+      <!-- Testimoni 2 -->
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i class="fa-solid fa-briefcase text-indigo-600 text-6xl mb-4"></i>
+        <p class="text-gray-600">“Sebelumnya saya sering lupa deadline kerja. Dengan Taskly, semua jadi lebih mudah.”</p>
+        <h4 class="mt-4 font-semibold text-indigo-600">— Dian, Karyawan</h4>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i class="fa-solid fa-book text-indigo-600 text-6xl mb-4"></i>
+        <p class="text-gray-600">“Sebagai pelajar, Taskly membuat saya lebih disiplin dalam mengerjakan tugas sekolah.”</p>
+        <h4 class="mt-4 font-semibold text-indigo-600">— Zara, Pelajar</h4>
+      </div>
+
+      <!-- Testimoni 4 -->
+      <div class="p-6 bg-white rounded-lg shadow">
+        <i class="fa-solid fa-building text-indigo-600 text-6xl mb-4"></i>
+        <p class="text-gray-600">“Aplikasi ini simpel tapi powerful. Sangat membantu mengatur proyek bisnis saya.”</p>
+        <h4 class="mt-4 font-semibold text-indigo-600">— Rina, Entrepreneur</h4>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Download Section -->
-  <section id="download" class="py-20 bg-white text-center">
-    <h2 class="text-3xl font-bold text-gray-900">Unduh Taskly Sekarang</h2>
-    <p class="mt-4 text-gray-600">Tersedia untuk Android, iOS, dan Web. Gratis untuk semua pengguna.</p>
-    <div class="mt-6 flex justify-center space-x-4">
-      <a href="#" class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Google Play</a>
-      <a href="#" class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900">App Store</a>
-    </div>
-  </section>
+<section id="download" class="py-20 bg-white text-center">
+  <h2 class="text-3xl font-bold text-gray-900">Unduh Taskly Sekarang</h2>
+  <p class="mt-4 text-gray-600">Tersedia untuk Android, iOS, dan Web. Gratis untuk semua pengguna.</p>
+  <div class="mt-6 flex justify-center space-x-6">
+    <a href="#" class="flex items-center space-x-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">
+      <i class="fa-brands fa-google-play text-2xl"></i>
+      <span>Google Play</span>
+    </a>
+    <a href="#" class="flex items-center space-x-2 px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800">
+      <i class="fa-brands fa-app-store text-2xl"></i>
+      <span>App Store</span>
+    </a>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-20 bg-gray-50">
