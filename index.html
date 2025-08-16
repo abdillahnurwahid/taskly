@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskly - Aplikasi Manajemen Tugas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-indigo-600">Taskly</div>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-700 hover:text-indigo-600">Beranda</a>
+        <a href="#features" class="text-gray-700 hover:text-indigo-600">Fitur</a>
+        <a href="#testimonials" class="text-gray-700 hover:text-indigo-600">Testimoni</a>
+        <a href="#download" class="text-gray-700 hover:text-indigo-600">Unduh</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600">Kontak</a>
+      </nav>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-md">
+      <nav class="flex flex-col space-y-4 p-6">
+        <a href="#home" class="text-gray-700 hover:text-indigo-600">Beranda</a>
+        <a href="#features" class="text-gray-700 hover:text-indigo-600">Fitur</a>
+        <a href="#testimonials" class="text-gray-700 hover:text-indigo-600">Testimoni</a>
+        <a href="#download" class="text-gray-700 hover:text-indigo-600">Unduh</a>
+        <a href="#contact" class="text-gray-700 hover:text-indigo-600">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gray-50 pt-28 pb-20 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Kelola Tugas Lebih Mudah dengan Taskly</h1>
+    <p class="mt-4 text-lg text-gray-600">Aplikasi sederhana untuk membantu Anda mengatur pekerjaan, sekolah, dan aktivitas sehari-hari.</p>
+    <a href="#download" class="mt-6 inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Mulai Sekarang</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Fitur Utama</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-indigo-600">Mudah Digunakan</h3>
+          <p class="mt-3 text-gray-600">Antarmuka sederhana yang membuat siapa saja bisa cepat terbiasa.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-indigo-600">Pengingat Otomatis</h3>
+          <p class="mt-3 text-gray-600">Jangan khawatir lupa deadline, kami ingatkan Anda tepat waktu.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-indigo-600">Sinkronisasi</h3>
+          <p class="mt-3 text-gray-600">Akses tugas Anda di berbagai perangkat dengan akun yang sama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Apa Kata Pengguna?</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow">
+          <p class="text-gray-600">“Taskly sangat membantu saya mengatur jadwal kuliah. Sekarang semua terasa lebih teratur!”</p>
+          <h4 class="mt-4 font-semibold text-indigo-600">— Budi, Mahasiswa</h4>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow">
+          <p class="text-gray-600">“Sebelumnya saya sering lupa deadline kerja. Dengan Taskly, semua jadi lebih mudah.”</p>
+          <h4 class="mt-4 font-semibold text-indigo-600">— Siti, Karyawan</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="py-20 bg-white text-center">
+    <h2 class="text-3xl font-bold text-gray-900">Unduh Taskly Sekarang</h2>
+    <p class="mt-4 text-gray-600">Tersedia untuk Android, iOS, dan Web. Gratis untuk semua pengguna.</p>
+    <div class="mt-6 flex justify-center space-x-4">
+      <a href="#" class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Google Play</a>
+      <a href="#" class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900">App Store</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-900">Hubungi Kami</h2>
+      <p class="mt-4 text-gray-600">Ada pertanyaan atau masukan? Kirimkan pesan Anda.</p>
+      <form class="mt-6 max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Nama" class="w-full p-3 border rounded-lg">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg">
+        <textarea placeholder="Pesan" rows="4" class="w-full p-3 border rounded-lg"></textarea>
+        <button class="w-full px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">Kirim</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    <p class="text-gray-600">&copy; 2025 Taskly. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <!-- JS Toggle Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
